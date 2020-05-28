@@ -25,10 +25,11 @@ $ git clone https://github.com/limsukjing/review-classification.git
 ```
 
 To run the main script: 
-
 ```
 python classification.py 
 ```
+
+*To-do: uncomment [this](https://github.com/limsukjing/review-classification/blob/e16cf44ad1fc54afe46a9bd5d979c3c353ebde50/classification.py#L14-L15) line of code to run the web scraper.*
 
 ## Algorithm
 
@@ -42,7 +43,7 @@ specific terms that are the most promising predictor of the positive/negative cl
 of columns. A few of the NLP techniques are used repeatedly throughout this process and they are as follows:
     - **Tokenization:** split a document into a list of tokens. 
     - **POS tagging:** assign specific lexical categories to words based on the contexts in which they occur.
-    - **Named-entity recognition (NER):** identify proper nouns (NNP) in certain categories such as names of actors/actresses and locations. 
+    - **Named-entity recognition (NER):** identify proper nouns (NNP) in certain categories such as the names of actors/actresses and locations. 
 5. **Text Vectorization:** the process of representing a corpus as vectors, i.e. feature extraction. It is an essential step in text analysis as it
 reduces the dimensionality of the data without losing important information.
 6. **Feature Reduction/selection:** irrelevant and redundant features should be removed to maximize the performance of the models, hence the vectors 
