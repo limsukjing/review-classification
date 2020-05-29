@@ -44,21 +44,27 @@ of columns. A few of the NLP techniques are used repeatedly throughout this proc
     - **Tokenization:** split a document into a list of tokens. 
     - **POS tagging:** assign specific lexical categories to words based on the contexts in which they occur.
     - **Named-entity recognition (NER):** identify proper nouns (NNP) in certain categories such as the names of actors/actresses and locations. 
-5. **Text Vectorization:** the process of representing a corpus as vectors, i.e. feature extraction. It is an essential step in text analysis as it
+5. **Text vectorization:** the process of representing a corpus as vectors, i.e. feature extraction. It is an essential step in text analysis as it
 reduces the dimensionality of the data without losing important information.
-6. **Feature Reduction/selection:** irrelevant and redundant features should be removed to maximize the performance of the models, hence the vectors 
+6. **Feature reduction/selection:** irrelevant and redundant features should be removed to maximize the performance of the models, hence the vectors 
 generated in **Step 5** are further reduced to a subset of 12 using feature selection. 
-7. **Text Mining/modelling:** the SVM and Naïve Bayes are the most suitable algorithms for this particular classification task as the output data
+7. **Text mining/modelling:** the SVM and Naïve Bayes are the most suitable algorithms for this particular classification task as the output data
 type is binomial, i.e. **movie_review (positive)** and **not_movie_review (negative)**, and they generally work well with text classification
 problems.
-8. **Model Evaluation:** the dataset has to be split into two subsets — one subset is used for training the model, while the other subset is used to 
+8. **Model evaluation:** the dataset has to be split into two subsets — one subset is used for training the model, while the other subset is used to 
 evaluate the performance of the classification model in terms of its accuracy, precision and recall. 
     - **Validation:** When it comes to generating a training/test dataset, the Cross Validation method appears to be a better approach as it allows 
     the model to train recursively on multiple train/test splits, as opposed to the Split Validation method which relies on a single split.
+    
+## Performance
+
+<p align="center">
+    <img src="https://github.com/limsukjing/review-classification/blob/master/output.png" width="600">
+</p>
 
 ## Built With
 
-* [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) - A library that makes it easy to scrape information from web pages.
+* [Beautiful Soup](https://pypi.org/project/beautifulsoup4/) - A library that makes it easy to scrape information from web pages.
 * [Matplotlib](https://matplotlib.org/) - A comprehensive library for creating static, animated and interactive visualizations in Python.
 * [NLTK](https://www.nltk.org/) - A leading platform for building Python programs to work with human language data.
 * [NumPy](https://numpy.org/) - The fundamental package for scientific computing with Python, which is used to generate multi-dimensional arrays that
