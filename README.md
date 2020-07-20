@@ -1,6 +1,6 @@
 # Review Classification
 
-This is a simple Python program designed to classify user-submitted reviews into their respective categories and obtain a more concise representation of consumer opinions by utilizing text analysis techniques.
+This is a simple Python program designed to classify user-submitted reviews into their respective categories (movie_review, not_movie_review) and obtain a more concise representation of consumer opinions by utilizing text analysis techniques.
 
 Documentation is available here: https://github.com/limsukjing/review-classification/blob/master/documentation.pdf
 
@@ -45,12 +45,6 @@ python classification.py
 7. **Text mining/modelling:** the SVM and Naïve Bayes are the most suitable algorithms for this particular classification task as the output data type is binomial, i.e. **movie_review (positive)** and **not_movie_review (negative)**, and they generally work well with text classification problems.
 8. **Model evaluation:** the dataset has to be split into two subsets — one subset is used for training the model, while the other subset is used to evaluate the performance of the classification model in terms of its accuracy, precision and recall. 
     - **Validation:** When it comes to generating a training/test dataset, the Cross Validation method appears to be a better approach as it allows the model to train recursively on multiple train/test splits, as opposed to the Split Validation method which relies on a single split.
-    
-## Performance
-
-<p align="center">
-    <img src="https://github.com/limsukjing/review-classification/blob/master/output.png" width="600">
-</p>
 
 ## Built With
 
